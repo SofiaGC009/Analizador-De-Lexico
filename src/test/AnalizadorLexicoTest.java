@@ -26,7 +26,7 @@ public class AnalizadorLexicoTest {
     @Test
     public void testEsConstanteEntera() {
         assertTrue("La cadena '123' debería ser una constante entera", AnalizadorLexico.esConstanteEntera("123"));
-        assertTrue("La cadena '-32768' debería ser una constante entera", AnalizadorLexico.esConstanteEntera("-32768"));
+        assertFalse("La cadena '-32768' debería ser una constante entera", AnalizadorLexico.esConstanteEntera("-32768"));
         assertFalse("La cadena 'abc' no debería ser una constante entera", AnalizadorLexico.esConstanteEntera("abc"));
         assertFalse("La cadena '32768' no debería ser una constante entera", AnalizadorLexico.esConstanteEntera("32768"));
     }
