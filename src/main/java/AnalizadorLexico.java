@@ -15,12 +15,12 @@ public class AnalizadorLexico {
 
     static {
         //Cambiar la direccion del archivo tokens.txt, poner la URL completa para evitar errores
-        cargarTablaDesdeArchivo("C:\\Users\\sofyg\\MateriasUni\\Desarrollo\\proyecto\\src\\main\\java\\teoria\\tokens.txt");
+        cargarTablaDesdeArchivo("src\\main\\java\\teoria\\tokens.txt");
     }
 
     public static void main(String[] args) {
         //Cambiar la direccion del archivo entrada.txt, poner la URL completa para evitar errores
-        String archivoFuente = "C:\\Users\\sofyg\\MateriasUni\\Desarrollo\\proyecto\\src\\main\\java\\teoria\\entrada.txt";
+        String archivoFuente = "src\\main\\java\\teoria\\entrada.txt";
         //Este archivo se genera en la misma carpeta donde se encuentra el proyecto.
         String archivoSalida = "tabla_tokens.txt";
 
